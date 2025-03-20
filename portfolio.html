@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | PrestigeWW Aerial Media</title>
+    <meta name="description" content="View our portfolio of professional drone photography and 360° virtual tours.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/btn-98.css">
+    <link rel="icon" href="favicon.ico">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Lightbox for portfolio images -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- Link to the secondary header CSS -->
+    <link rel="stylesheet" href="assets/css/headers.css">
+    <!-- Link to the portfolio page specific CSS -->
+    <link rel="stylesheet" href="assets/css/portfolio.css">
+    <style>
+        .coming-soon-tag {
+            font-size: 0.65rem;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2px 6px;
+            border-radius: 10px;
+            margin-left: 5px;
+            vertical-align: middle;
+            display: inline-block;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="secondary-header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="assets/images/Maybe.png" alt="PrestigeWW Aerial Media Logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+                <div class="header-contact">
+                    <a href="contact.html" class="btn-98">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Page Title Section -->
+        <section class="page-title secondary-page-title">
+            <div class="container">
+                <h1>Portfolio</h1>
+                <p>A showcase of my drone photography and videography work</p>
+            </div>
+        </section>
+        
+        <!-- Portfolio Filter -->
+        <section class="portfolio-filter section-padding">
+            <div class="container">
+                <div class="filter-container">
+                    <p>Filter by:</p>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="aerial">Aerial Photography</button>
+                        <button class="filter-btn" data-filter="real-estate">Real Estate</button>
+                        <button class="filter-btn" data-filter="commercial">Commercial</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Portfolio Grid -->
+        <section class="portfolio-grid section-padding alt-bg">
+            <div class="container">
+                <div class="grid-container">
+                    <!-- Portfolio Item 1 -->
+                    <div class="portfolio-item" data-category="aerial real-estate">
+                        <a href="assets/images/portfolio/large/aerial-1-large.jpg" data-lightbox="portfolio" data-title="Luxury Beachfront Property">
+                            <img src="assets/images/portfolio/thumbnails/aerial-1.jpg" alt="Luxury Beachfront Property">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <h3>Luxury Beachfront Property</h3>
+                                    <p>Aerial Photography</p>
+                                    <span class="view-project">View Project</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Portfolio Item 2 -->
+                    <div class="portfolio-item" data-category="virtual real-estate">
+                        <a href="assets/images/portfolio/large/virtual-1-large.jpg" data-lightbox="portfolio" data-title="Modern Downtown Apartment">
+                            <img src="assets/images/portfolio/thumbnails/virtual-1.jpg" alt="Modern Downtown Apartment">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <h3>Modern Downtown Apartment</h3>
+                                    <p>Virtual Tour</p>
+                                    <span class="view-project">View Project</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Portfolio Item 3 -->
+                    <div class="portfolio-item" data-category="aerial commercial">
+                        <a href="assets/images/portfolio/large/aerial-2-large.jpg" data-lightbox="portfolio" data-title="Shopping Center Development">
+                            <img src="assets/images/portfolio/thumbnails/aerial-2.jpg" alt="Shopping Center Development">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <h3>Shopping Center Development</h3>
+                                    <p>Aerial Photography</p>
+                                    <span class="view-project">View Project</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Portfolio Item 4 -->
+                    <div class="portfolio-item" data-category="virtual commercial">
+                        <a href="assets/images/portfolio/large/virtual-2-large.jpg" data-lightbox="portfolio" data-title="Boutique Hotel">
+                            <img src="assets/images/portfolio/thumbnails/virtual-2.jpg" alt="Boutique Hotel">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <h3>Boutique Hotel</h3>
+                                    <p>Virtual Tour</p>
+                                    <span class="view-project">View Project</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Portfolio Item 5 -->
+                    <div class="portfolio-item" data-category="aerial real-estate">
+                        <a href="assets/images/portfolio/large/aerial-3-large.jpg" data-lightbox="portfolio" data-title="Suburban Estate">
+                            <img src="assets/images/portfolio/thumbnails/aerial-3.jpg" alt="Suburban Estate">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <h3>Suburban Estate</h3>
+                                    <p>Aerial Photography</p>
+                                    <span class="view-project">View Project</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Portfolio Item 6 -->
+                    <div class="portfolio-item" data-category="virtual real-estate">
+                        <a href="assets/images/portfolio/large/virtual-3-large.jpg" data-lightbox="portfolio" data-title="Luxury Mountain Retreat">
+                            <img src="assets/images/portfolio/thumbnails/virtual-3.jpg" alt="Luxury Mountain Retreat">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <h3>Luxury Mountain Retreat</h3>
+                                    <p>Virtual Tour</p>
+                                    <span class="view-project">View Project</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Portfolio Item 7 -->
+                    <div class="portfolio-item" data-category="aerial commercial">
+                        <a href="assets/images/portfolio/large/aerial-4-large.jpg" data-lightbox="portfolio" data-title="Industrial Complex">
+                            <img src="assets/images/portfolio/thumbnails/aerial-4.jpg" alt="Industrial Complex">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <h3>Industrial Complex</h3>
+                                    <p>Aerial Photography</p>
+                                    <span class="view-project">View Project</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Portfolio Item 8 -->
+                    <div class="portfolio-item" data-category="virtual commercial">
+                        <a href="assets/images/portfolio/large/virtual-4-large.jpg" data-lightbox="portfolio" data-title="Corporate Office Space">
+                            <img src="assets/images/portfolio/thumbnails/virtual-4.jpg" alt="Corporate Office Space">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <h3>Corporate Office Space</h3>
+                                    <p>Virtual Tour</p>
+                                    <span class="view-project">View Project</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Portfolio Item 9 -->
+                    <div class="portfolio-item" data-category="aerial real-estate">
+                        <a href="assets/images/portfolio/large/aerial-5-large.jpg" data-lightbox="portfolio" data-title="Waterfront Development">
+                            <img src="assets/images/portfolio/thumbnails/aerial-5.jpg" alt="Waterfront Development">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <h3>Waterfront Development</h3>
+                                    <p>Aerial Photography</p>
+                                    <span class="view-project">View Project</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Portfolio Item 10 -->
+                    <div class="portfolio-item" data-category="virtual real-estate">
+                        <a href="assets/images/portfolio/large/virtual-5-large.jpg" data-lightbox="portfolio" data-title="Architectural Showcase Home">
+                            <img src="assets/images/portfolio/thumbnails/virtual-5.jpg" alt="Architectural Showcase Home">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <h3>Architectural Showcase Home</h3>
+                                    <p>Virtual Tour</p>
+                                    <span class="view-project">View Project</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Portfolio Item 11 -->
+                    <div class="portfolio-item" data-category="aerial commercial">
+                        <a href="assets/images/portfolio/large/aerial-6-large.jpg" data-lightbox="portfolio" data-title="Resort Complex">
+                            <img src="assets/images/portfolio/thumbnails/aerial-6.jpg" alt="Resort Complex">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <h3>Resort Complex</h3>
+                                    <p>Aerial Photography</p>
+                                    <span class="view-project">View Project</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <!-- Portfolio Item 12 -->
+                    <div class="portfolio-item" data-category="virtual commercial">
+                        <a href="assets/images/portfolio/large/virtual-6-large.jpg" data-lightbox="portfolio" data-title="Restaurant Venue">
+                            <img src="assets/images/portfolio/thumbnails/virtual-6.jpg" alt="Restaurant Venue">
+                            <div class="item-overlay">
+                                <div class="overlay-content">
+                                    <h3>Restaurant Venue</h3>
+                                    <p>Virtual Tour</p>
+                                    <span class="view-project">View Project</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="load-more">
+                    <button class="cta-button-secondary">Load More Projects</button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Project Section -->
+        <section class="featured-project section-padding">
+            <div class="container">
+                <div class="section-header centered">
+                    <h2>Featured Project</h2>
+                    <p>Highlighting my best work</p>
+                </div>
+                <div class="featured-content">
+                    <div class="featured-image">
+                        <img src="assets/images/portfolio/featured-project.jpg" alt="Luxury Oceanfront Estate">
+                    </div>
+                    <div class="featured-info">
+                        <h3>Luxury Oceanfront Estate</h3>
+                        <p class="project-type">Aerial Photography & Video</p>
+                        <p class="project-description">This project showcases the extensive features of this premium property, highlighting the waterfront location, architectural details, and surrounding landscape from a unique aerial perspective.</p>
+                        <div class="project-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Location:</span>
+                                <span>Virginia Beach, Virginia</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Services:</span>
+                                <span>Aerial Photography, Property Video</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Equipment:</span>
+                                <span>DJI Mavic 3 Pro, 4K/60fps</span>
+                            </div>
+                        </div>
+                        <a href="#" class="cta-button">View Full Gallery</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to create stunning aerial content for your project?</h2>
+                    <p>Let's discuss how drone photography and videography can elevate your vision.</p>
+                    <a href="contact.html" class="cta-button">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="assets/images/prestigeww-logo-white.svg" alt="PrestigeWW Aerial Media Logo">
+                    <p>Elevating your vision with stunning aerial imagery and virtual tours.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-nav">
+                        <h3>Navigate</h3>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="testimonials.html">Testimonials <span class="coming-soon-tag">Coming Soon</span></a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-contact">
+                        <h3>Contact Us</h3>
+                        <ul>
+                            <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> info@prestigeww.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> New York, NY</li>
+                        </ul>
+                    </div>
+                    <div class="footer-social">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 PrestigeWW Aerial Media. All rights reserved.</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/headers.js"></script>
+    <script>
+        // Portfolio filtering
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = this.getAttribute('data-filter');
+                    
+                    // Filter items
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category').includes(filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+            
+            // Configure lightbox
+            lightbox.option({
+                'resizeDuration': 200,
+                'wrapAround': true,
+                'fadeDuration': 300
+            });
+        });
+    </script>
+</body>
+</html> 

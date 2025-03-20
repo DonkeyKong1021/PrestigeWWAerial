@@ -1,0 +1,291 @@
+/* Services Navigation */
+.services-navigation {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.service-nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--light-color);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.service-nav-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.service-nav-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.service-nav-item p {
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* Service Detail Section */
+.service-detail {
+    position: relative;
+    padding: var(--spacing-xl) 0;
+}
+
+.service-detail:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-color);
+    z-index: -1;
+}
+
+.service-content {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.service-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.service-image {
+    flex: 1;
+    min-width: 300px;
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+}
+
+.service-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.service-image:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.service-image:hover img {
+    transform: scale(1.05);
+}
+
+.service-detail h2,
+.service-content h2 {
+    color: var(--dark-color);
+    font-size: 2.2rem;
+    margin-bottom: var(--spacing-sm);
+    position: relative;
+}
+
+.service-detail h2:after,
+.service-content h2:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary-color);
+}
+
+.service-detail .service-info {
+    margin-bottom: var(--spacing-lg);
+}
+
+.service-features, 
+.ideal-for {
+    margin: var(--spacing-md) 0;
+}
+
+.ideal-for {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.ideal-for span {
+    background-color: rgba(var(--primary-rgb), 0.1);
+    color: var(--primary-color);
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+/* Feature Grid */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+}
+
+.feature-item {
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-md);
+    box-shadow: var(--box-shadow-light);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--box-shadow-medium);
+}
+
+.feature-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-sm);
+}
+
+.feature-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.feature-item p {
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+/* Pricing CTA section */
+.pricing-cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pricing-points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin: var(--spacing-lg) 0;
+}
+
+.pricing-point {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pricing-point i {
+    color: var(--primary-color);
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+    position: relative;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: var(--spacing-sm);
+    border-radius: var(--border-radius);
+    background-color: var(--light-color);
+    box-shadow: var(--box-shadow-light);
+}
+
+.faq-question {
+    padding: var(--spacing-sm);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-question h3 {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0;
+    padding-right: var(--spacing-sm);
+}
+
+.faq-toggle {
+    font-size: 1rem;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 var(--spacing-sm);
+}
+
+.faq-answer p {
+    padding-bottom: var(--spacing-sm);
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+}
+
+/* Icon-specific styling for services */
+.service-nav-item[href="#real-estate"] .service-icon {
+    color: #2196F3;
+}
+
+.service-nav-item[href="#events"] .service-icon {
+    color: #FF9800;
+}
+
+.service-nav-item[href="#construction"] .service-icon {
+    color: #F44336;
+}
+
+#construction .feature-item i {
+    color: #F44336;
+}
+
+#construction .ideal-for span {
+    background-color: rgba(244, 67, 54, 0.1);
+    color: #F44336;
+}
+
+#construction .cta-button:hover {
+    background-color: #F44336;
+    border-color: #F44336;
+}
