@@ -127,8 +127,8 @@
 
 /* Services Preview Section */
 .services-preview {
-    text-align: center;
-    padding: var(--spacing-lg) 0;
+    padding: 80px 0;
+    background-color: var(--bg-light);
 }
 
 .services-preview h2 {
@@ -150,63 +150,107 @@
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: var(--spacing-lg);
-    margin-top: var(--spacing-lg);
-}
-
-@media (min-width: 1200px) {
-    .services-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
 }
 
 .service-card {
-    width: 100%;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 30px;
     text-align: center;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 2rem 1.5rem;
-    box-shadow: var(--box-shadow-light);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
-    border: 1px solid var(--border-color);
-    transform: translateY(0);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .service-card:hover {
-    /* Add a smooth expansion effect */
-    transform: translateY(-10px) scale(1.03);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
-.service-card:hover .service-icon i {
-    transform: translateY(-10px);
-    animation: icon-bounce 0.5s ease;
+.service-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    color: var(--white);
 }
 
 .service-card h3 {
-    color: var(--secondary-color);
-    margin-bottom: 1rem;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: var(--text-dark);
 }
 
 .service-card p {
-    color: var(--dark-color);
-    margin-bottom: 1.5rem;
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 15px;
+    color: var(--text-medium);
+    margin-bottom: 20px;
+    line-height: 1.6;
 }
 
-.services-cta {
-    margin-top: var(--spacing-lg);
+.service-link {
+    display: inline-block;
+    color: var(--primary);
+    font-weight: 500;
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
-@keyframes icon-bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
+.service-link:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary);
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+.service-link:hover {
+    color: var(--primary-dark);
+}
+
+.service-link:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Service Icon Colors */
+.real-estate-icon {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+}
+
+.events-icon {
+    background: linear-gradient(135deg, #7f7fd5, #86a8e7);
+}
+
+.mapping-icon {
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+}
+
+.agriculture-icon {
+    background: linear-gradient(135deg, #56ab2f, #a8e063);
+}
+
+.infrastructure-icon {
+    background: linear-gradient(135deg, #4568dc, #b06ab3);
+}
+
+.tourism-icon {
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
 }
 
 /* Portfolio Preview Section */

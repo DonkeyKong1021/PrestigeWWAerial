@@ -21,21 +21,6 @@
     <link rel="stylesheet" href="assets/css/headers.css">
     <!-- Link to the portfolio page specific CSS -->
     <link rel="stylesheet" href="assets/css/portfolio.css">
-    <style>
-        .coming-soon-tag {
-            font-size: 0.65rem;
-            background-color: var(--primary-color);
-            color: white;
-            padding: 2px 6px;
-            border-radius: 10px;
-            margin-left: 5px;
-            vertical-align: middle;
-            display: inline-block;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-    </style>
 </head>
 <body>
     <header class="secondary-header">
@@ -49,7 +34,17 @@
                 <nav>
                     <ul class="nav-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="services.html">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="real-estate.html">Real Estate</a></li>
+                                <li><a href="events-weddings.html">Events</a></li>
+                                <li><a href="construction.html">Construction</a></li>
+                                <li><a href="agriculture.html">Agriculture</a></li>
+                                <li><a href="infrastructure.html">Infrastructure</a></li>
+                                <li><a href="tourism.html">Tourism</a></li>
+                            </ul>
+                        </li>
                         <li><a href="portfolio.html" class="active">Portfolio</a></li>
                     </ul>
                     <div class="hamburger">
@@ -59,7 +54,7 @@
                     </div>
                 </nav>
                 <div class="header-contact">
-                    <a href="contact.html" class="btn-98">Contact</a>
+                    <a href="portal.html" class="cta-button-main">Client Portal</a>
                 </div>
             </div>
         </div>
