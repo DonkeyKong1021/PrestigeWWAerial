@@ -22,11 +22,10 @@ This website is built with a focus on clean, modern design principles that showc
 ```
 PrestigeWWAerialMedia/
 ├── index.html         # Home page
-├── about.html         # About page
-├── services.html      # Services page
-├── portfolio.html     # Portfolio page
-├── testimonials.html  # Testimonials page
 ├── contact.html       # Contact page
+├── portfolio.html     # Portfolio page
+├── portal.html        # Client portal page
+├── services/          # Service-specific pages
 ├── favicon.ico        # Website icon
 ├── assets/
 │   ├── css/
