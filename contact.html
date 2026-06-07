@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | PrestigeWW Aerial Media</title>
-    <meta name="description" content="Get in touch with PrestigeWW Aerial Media for professional drone photography and 360° virtual tour services.">
+    <title>Contact Us | NuVue Media LLC</title>
+    <meta name="description" content="Get in touch with NuVue Media LLC for professional drone photography and 360° virtual tour services.">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="assets/css/btn-98.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="assets/images/nuvue-logos/nuvue-transparent-black.png">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
@@ -27,8 +27,8 @@
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="index.html">
-                        <img src="assets/images/Maybe.png" alt="PrestigeWW Aerial Media Logo">
+                    <a href="index.html" aria-label="NuVue Media LLC home">
+                        <img src="assets/images/nuvue-logos/nuvue-header-white-web.png" alt="NuVue Media LLC Logo" height="128" width="393" decoding="async">
                     </a>
                 </div>
                 <nav>
@@ -38,11 +38,8 @@
                             <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="services/real-estate.html">Real Estate</a></li>
-                                <li><a href="services/events-weddings.html">Events</a></li>
-                                <li><a href="services/construction.html">Construction</a></li>
-                                <li><a href="services/agriculture.html">Agriculture</a></li>
-                                <li><a href="services/infrastructure.html">Infrastructure</a></li>
-                                <li><a href="services/tourism.html">Tourism</a></li>
+                                <li><a href="services/events-weddings.html">Weddings & Events</a></li>
+                                <li><a href="services/commercial.html">Commercial</a></li>
                             </ul>
                         </li>
                         <li><a href="portfolio.html">Portfolio</a></li>
@@ -60,18 +57,24 @@
         </div>
     </header>
     <main>
-        <!-- Page Title Section -->
-        <!-- <section class="page-title secondary-page-title">
+        <section class="page-hero page-hero--weddings">
+            <div class="page-hero-overlay"></div>
             <div class="container">
-                <h1>Contact Us</h1>
-                <div class="breadcrumb">
-                    <a href="index.html">Home</a> / <span>Contact</span>
+                <div class="page-hero-content">
+                    <h1>Contact Us</h1>
+                    <p>Let's discuss your next aerial project</p>
                 </div>
             </div>
-        </section> -->
+            <div class="page-hero-bottom"></div>
+            <div class="page-hero-scroll">
+                <a href="#page-hero-bottom" aria-label="Scroll to content">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
         
         <!-- Contact Form Section -->
-        <section class="contact-page section-padding">
+        <section id="page-hero-bottom" class="contact-page section-padding">
             <div class="container">
                 <div class="contact-intro">
                     <h2>Get In Touch</h2>
@@ -144,11 +147,10 @@
                                 <label for="service">Interest</label>
                                 <select id="service" name="service" required>
                                     <option value="" disabled selected>Select an option</option>
-                                    <option value="Real Estate">Real Estate Photography</option>
-                                    <option value="Construction">Construction & Development</option>
-                                    <option value="Marketing">Marketing & Promotional</option>
-                                    <option value="Events">Event Coverage</option>
-                                    <option value="Other">Other Services</option>
+                                    <option value="Real Estate">Real Estate</option>
+                                    <option value="Weddings & Events">Weddings & Events</option>
+                                    <option value="Commercial">Commercial</option>
+                                    <option value="Other">Other</option>
                                 </select>
                                 <div class="error-message" id="service-error"></div>
                             </div>
@@ -225,7 +227,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="assets/images/prestigeww-logo-white.svg" alt="PrestigeWW Aerial Media Logo">
+                    <img src="assets/images/nuvue-logos/nuvue-header-white-web.png" alt="NuVue Media LLC Logo" height="88" width="269" loading="lazy" decoding="async">
                     <p>Elevating your vision with stunning aerial imagery and virtual tours.</p>
                 </div>
                 <div class="footer-links">
@@ -260,7 +262,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 PrestigeWW Aerial Media. All rights reserved.</p>
+                <p>&copy; 2023 NuVue Media LLC. All rights reserved.</p>
                 <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
             </div>
         </div>
@@ -269,133 +271,6 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/headers.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.5/dist/sweetalert2.all.min.js"></script>
-    <script>
-        // Form validation and submission
-        document.addEventListener('DOMContentLoaded', function() {
-            const contactForm = document.getElementById('contactForm');
-            const submitBtn = document.getElementById('submitBtn');
-            
-            // FAQ toggles
-            const faqQuestions = document.querySelectorAll('.faq-question');
-            faqQuestions.forEach(question => {
-                question.addEventListener('click', () => {
-                    // Toggle active class
-                    question.parentElement.classList.toggle('active');
-                    
-                    // Toggle icon
-                    const icon = question.querySelector('.faq-toggle i');
-                    if (question.parentElement.classList.contains('active')) {
-                        icon.classList.replace('fa-plus', 'fa-minus');
-                    } else {
-                        icon.classList.replace('fa-minus', 'fa-plus');
-                    }
-                    
-                    // Toggle answer visibility
-                    const answer = question.nextElementSibling;
-                    if (question.parentElement.classList.contains('active')) {
-                        answer.style.maxHeight = answer.scrollHeight + 'px';
-                    } else {
-                        answer.style.maxHeight = 0;
-                    }
-                });
-            });
-            
-            // Form submission
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    
-                    // Basic validation
-                    let isValid = true;
-                    const name = document.getElementById('name');
-                    const email = document.getElementById('email');
-                    const subject = document.getElementById('subject');
-                    const message = document.getElementById('message');
-                    
-                    // Clear previous error messages
-                    document.querySelectorAll('.error-message').forEach(el => el.textContent = '');
-                    
-                    // Validate name
-                    if (!name.value.trim()) {
-                        document.getElementById('name-error').textContent = 'Please enter your name';
-                        isValid = false;
-                    }
-                    
-                    // Validate email
-                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                    if (!email.value.trim() || !emailRegex.test(email.value)) {
-                        document.getElementById('email-error').textContent = 'Please enter a valid email address';
-                        isValid = false;
-                    }
-                    
-                    // Validate subject
-                    if (!subject.value || subject.value === '') {
-                        document.getElementById('subject-error').textContent = 'Please select a subject';
-                        isValid = false;
-                    }
-                    
-                    // Validate message
-                    if (!message.value.trim()) {
-                        document.getElementById('message-error').textContent = 'Please enter your message';
-                        isValid = false;
-                    }
-                    
-                    if (isValid) {
-                        // Change button state
-                        submitBtn.disabled = true;
-                        submitBtn.textContent = 'Sending...';
-                        
-                        // In a real implementation, you would send the form data to your server here
-                        // For demonstration, we'll simulate a server response after a delay
-                        setTimeout(() => {
-                            Swal.fire({
-                                title: 'Message Sent!',
-                                text: 'Thank you for reaching out. I\'ll get back to you as soon as possible from Richmond, VA.',
-                                icon: 'success',
-                                confirmButtonText: 'Great!'
-                            });
-                            
-                            // Reset the form
-                            contactForm.reset();
-                            submitBtn.disabled = false;
-                            submitBtn.textContent = 'Send Message';
-                        }, 1500);
-                        
-                        /* 
-                        // Example of how you would implement actual form submission:
-                        fetch('your-server-endpoint', {
-                            method: 'POST',
-                            body: new FormData(contactForm)
-                        })
-                        .then(response => response.json())
-                        .then(data => {
-                            // Handle success
-                            Swal.fire({
-                                title: 'Message Sent!',
-                                text: 'Thank you for reaching out. I\'ll get back to you as soon as possible from Richmond, VA.',
-                                icon: 'success',
-                                confirmButtonText: 'Great!'
-                            });
-                            contactForm.reset();
-                        })
-                        .catch(error => {
-                            // Handle error
-                            Swal.fire({
-                                title: 'Error!',
-                                text: 'Something went wrong. Please try again later.',
-                                icon: 'error',
-                                confirmButtonText: 'OK'
-                            });
-                        })
-                        .finally(() => {
-                            submitBtn.disabled = false;
-                            submitBtn.textContent = 'Send Message';
-                        });
-                        */
-                    }
-                });
-            }
-        });
-    </script>
+    <script src="assets/js/contact.js"></script>
 </body>
 </html> 

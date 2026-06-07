@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate Aerial Media | PrestigeWW Aerial Media</title>
+    <title>Real Estate Aerial Media | NuVue Media LLC</title>
     <meta name="description" content="Professional drone photography and videography services for real estate properties in Richmond, VA. Elevate your property listings with stunning aerial imagery.">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="icon" href="../assets/images/nuvue-logos/nuvue-transparent-black.png">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
@@ -15,17 +15,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Link to the secondary header CSS -->
-    <link rel="stylesheet" href="assets/css/headers.css">
+    <link rel="stylesheet" href="../assets/css/headers.css">
     <!-- Link to the services page specific CSS -->
-    <link rel="stylesheet" href="assets/css/services-page.css">
+    <link rel="stylesheet" href="../assets/css/services-page.css">
+    <link rel="preload" as="image" href="../assets/images/real-estate/snowy-house.jpeg">
 </head>
 <body>
     <header class="secondary-header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="../index.html">
-                        <img src="assets/images/Maybe.png" alt="PrestigeWW Aerial Media Logo">
+                    <a href="../index.html" aria-label="NuVue Media LLC home">
+                        <img src="../assets/images/nuvue-logos/nuvue-header-white-web.png" alt="NuVue Media LLC Logo" height="128" width="393" decoding="async">
                     </a>
                 </div>
                 <nav>
@@ -35,11 +36,8 @@
                             <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="../services/real-estate.html" class="active">Real Estate</a></li>
-                                <li><a href="../services/events-weddings.html">Events</a></li>
-                                <li><a href="../services/construction.html">Construction</a></li>
-                                <li><a href="../services/agriculture.html">Agriculture</a></li>
-                                <li><a href="../services/infrastructure.html">Infrastructure</a></li>
-                                <li><a href="../services/tourism.html">Tourism</a></li>
+                                <li><a href="../services/events-weddings.html">Weddings & Events</a></li>
+                                <li><a href="../services/commercial.html">Commercial</a></li>
                             </ul>
                         </li>
                         <li><a href="../portfolio.html">Portfolio</a></li>
@@ -58,13 +56,19 @@
     </header>
     <main>
         <!-- Page Banner -->
-        <section class="page-banner">
+        <section class="page-banner real-estate-banner">
             <div class="banner-overlay"></div>
             <div class="container">
                 <div class="banner-content">
-                    <h1>Real Estate Aerial Media</h1>
-                    <p>Elevate your property listings with stunning aerial perspectives</p>
+                    <h1>Real Estate</h1>
+                    <p>Aerial photo and video for property listings</p>
                 </div>
+            </div>
+            <div id="page-hero-bottom" class="page-hero-bottom"></div>
+            <div class="scroll-down">
+                <a href="#page-hero-bottom" aria-label="Scroll to content">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
             </div>
         </section>
         
@@ -72,11 +76,11 @@
         <section class="services-overview section-padding">
             <div class="container">
                 <div class="section-header centered">
-                    <h2>Comprehensive Real Estate Solutions</h2>
-                    <p>Stand out in a competitive market with professional aerial imagery</p>
+                    <h2>Real Estate Aerial Media</h2>
+                    <p>Help buyers see the full story of every property</p>
                 </div>
                 <div class="overview-content">
-                    <p>PrestigeWW Aerial Media specializes in creating visually stunning property showcases that capture attention and drive interest. Our comprehensive real estate packages combine ground and aerial perspectives to highlight features, surroundings, and context that traditional photography simply can't achieve. From residential listings to commercial properties, our expertise helps real estate professionals market properties effectively.</p>
+                    <p>NuVue Media LLC captures aerial photography and video that shows location, layout, and curb appeal in a single glance. From residential listings to commercial buildings, we deliver polished media agents can drop straight into MLS, websites, and social posts.</p>
                 </div>
             </div>
         </section>
@@ -85,12 +89,12 @@
         <section class="service-detail section-padding alt-bg" id="property-showcase">
             <div class="container">
                 <div class="section-header centered">
-                    <h2>Property Showcase Photography</h2>
-                    <p>Comprehensive visual presentations that sell properties faster</p>
+                    <h2>Aerial Photography & Video</h2>
+                    <p>Everything you need to market a listing from above</p>
                 </div>
                 <div class="service-content">
                     <div class="service-info">
-                        <p>Our property showcase packages combine ground-level and aerial photography to create a complete visual presentation of your listing. We capture the property from its most flattering angles, highlighting architectural features, landscaping details, and the surrounding context that makes each property unique.</p>
+                        <p>We photograph and film each property from elevated angles that highlight architecture, lot size, landscaping, and neighborhood context. Deliverables are edited, color-corrected, and formatted for MLS uploads, property websites, and social campaigns.</p>
                         
                         <div class="feature-grid">
                             <div class="feature-item">
@@ -126,109 +130,7 @@
                         <a href="../contact.html" class="cta-button">Request a Quote</a>
                     </div>
                     <div class="service-image">
-                        <img src="assets/images/services/property-showcase.jpg" alt="Property Showcase Photography">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Virtual Tour Section -->
-        <section class="service-detail section-padding" id="virtual-tours">
-            <div class="container">
-                <div class="section-header centered">
-                    <h2>Virtual Tours</h2>
-                    <p>Immersive property experiences with aerial introductions</p>
-                </div>
-                <div class="service-content">
-                    <div class="service-info">
-                        <p>Our virtual tour packages create immersive property experiences that allow potential buyers to explore properties remotely. Each tour begins with a dramatic aerial introduction that establishes location context before transitioning to interior walkthroughs, giving viewers a complete understanding of the property and its surroundings.</p>
-                        
-                        <div class="feature-grid">
-                            <div class="feature-item">
-                                <i class="fas fa-film"></i>
-                                <h4>Aerial Introductions</h4>
-                                <p>Dynamic property approaches and fly-arounds</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-vr-cardboard"></i>
-                                <h4>360° Room Views</h4>
-                                <p>Interactive interior exploration</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-street-view"></i>
-                                <h4>Neighborhood Context</h4>
-                                <p>Showcase proximity to amenities</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-share-alt"></i>
-                                <h4>Multi-Platform Delivery</h4>
-                                <p>Tours optimized for all devices</p>
-                            </div>
-                        </div>
-                        
-                        <div class="ideal-for">
-                            <span>Remote Buyers</span>
-                            <span>Luxury Properties</span>
-                            <span>Vacation Rentals</span>
-                            <span>Commercial Spaces</span>
-                            <span>Property Developers</span>
-                        </div>
-                        
-                        <a href="../contact.html" class="cta-button">Request a Quote</a>
-                    </div>
-                    <div class="service-image">
-                        <img src="assets/images/services/virtual-tour.jpg" alt="Virtual Tour Services">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Land & Property Mapping Section -->
-        <section class="service-detail section-padding alt-bg" id="land-mapping">
-            <div class="container">
-                <div class="section-header centered">
-                    <h2>Land & Property Mapping</h2>
-                    <p>Detailed aerial documentation of properties and land parcels</p>
-                </div>
-                <div class="service-content">
-                    <div class="service-info">
-                        <p>Our land and property mapping services provide comprehensive aerial documentation of properties, land parcels, and development sites. These detailed aerial maps help buyers understand property boundaries, topographical features, and potential development opportunities, making them invaluable for land sales, development projects, and large properties.</p>
-                        
-                        <div class="feature-grid">
-                            <div class="feature-item">
-                                <i class="fas fa-map"></i>
-                                <h4>Property Boundaries</h4>
-                                <p>Clear visualization of land parcels</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-mountain"></i>
-                                <h4>Topographical Features</h4>
-                                <p>Document elevation changes and natural features</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-ruler-combined"></i>
-                                <h4>Measurement Data</h4>
-                                <p>Accurate property dimensions and areas</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-file-image"></i>
-                                <h4>High-Resolution Imagery</h4>
-                                <p>Detailed aerial maps for planning and marketing</p>
-                            </div>
-                        </div>
-                        
-                        <div class="ideal-for">
-                            <span>Land Sales</span>
-                            <span>Farm & Ranch Properties</span>
-                            <span>Development Sites</span>
-                            <span>Commercial Parcels</span>
-                            <span>Estate Properties</span>
-                        </div>
-                        
-                        <a href="../contact.html" class="cta-button">Request a Quote</a>
-                    </div>
-                    <div class="service-image">
-                        <img src="assets/images/services/land-mapping.jpg" alt="Land and Property Mapping">
+                        <img src="../assets/images/real-estate/scenery.png" alt="Aerial property showcase photography" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -253,7 +155,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="assets/images/Maybe.png" alt="PrestigeWW Aerial Media Logo">
+                    <img src="../assets/images/nuvue-logos/nuvue-header-white-web.png" alt="NuVue Media LLC Logo" height="80" width="245" loading="lazy" decoding="async">
                     <p>Professional drone services in Richmond, VA</p>
                 </div>
                 <div class="footer-links">
@@ -270,11 +172,8 @@
                         <h3>Services</h3>
                         <ul>
                             <li><a href="../services/real-estate.html">Real Estate</a></li>
-                            <li><a href="../services/events-weddings.html">Events</a></li>
-                            <li><a href="../services/construction.html">Construction</a></li>
-                            <li><a href="../services/agriculture.html">Agriculture</a></li>
-                            <li><a href="../services/infrastructure.html">Infrastructure</a></li>
-                            <li><a href="../services/tourism.html">Tourism</a></li>
+                            <li><a href="../services/events-weddings.html">Weddings & Events</a></li>
+                            <li><a href="../services/commercial.html">Commercial</a></li>
                         </ul>
                     </div>
                 </div>
@@ -290,12 +189,13 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 PrestigeWW Aerial Media. All Rights Reserved.</p>
+                <p>&copy; 2023 NuVue Media LLC. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/headers.js"></script>
 </body>
 </html> 

@@ -1,6 +1,6 @@
-# PrestigeWW Aerial Media Website
+# NuVue Media LLC Website
 
-A professional website for PrestigeWW Aerial Media, a photography business specializing in drone photography using the DJI Mini 3 and immersive 360° virtual tours.
+A professional website for NuVue Media LLC, a photography business specializing in drone photography using the DJI Mini 3 and immersive 360° virtual tours.
 
 ## Project Overview
 
@@ -91,4 +91,4 @@ PrestigeWWAerialMedia/
 
 ## License
 
-All rights reserved. This website is intended for PrestigeWW Aerial Media's use only. 
+All rights reserved. This website is intended for NuVue Media LLC's use only. 

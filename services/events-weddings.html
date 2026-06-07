@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Events & Weddings Aerial Media | PrestigeWW Aerial Media</title>
+    <title>Weddings & Events | NuVue Media LLC</title>
     <meta name="description" content="Professional drone photography and videography services for weddings, festivals, and special events in Richmond, VA. Capture your event from stunning aerial perspectives.">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="icon" href="../assets/images/nuvue-logos/nuvue-transparent-black.png">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
@@ -15,17 +15,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <!-- Link to the secondary header CSS -->
-    <link rel="stylesheet" href="assets/css/headers.css">
+    <link rel="stylesheet" href="../assets/css/headers.css">
     <!-- Link to the services page specific CSS -->
-    <link rel="stylesheet" href="assets/css/services-page.css">
+    <link rel="stylesheet" href="../assets/css/services-page.css">
+    <link rel="preload" as="image" href="../assets/images/weddings/wedding-venue.jpeg">
+    <link rel="preload" as="image" href="../assets/images/weddings/valley.jpeg">
 </head>
 <body>
     <header class="secondary-header">
         <div class="container">
             <div class="header-content">
                 <div class="logo">
-                    <a href="../index.html">
-                        <img src="assets/images/Maybe.png" alt="PrestigeWW Aerial Media Logo">
+                    <a href="../index.html" aria-label="NuVue Media LLC home">
+                        <img src="../assets/images/nuvue-logos/nuvue-header-white-web.png" alt="NuVue Media LLC Logo" height="128" width="393" decoding="async">
                     </a>
                 </div>
                 <nav>
@@ -35,11 +37,8 @@
                             <a href="#" class="dropdown-toggle">Services <i class="fas fa-chevron-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="../services/real-estate.html">Real Estate</a></li>
-                                <li><a href="../services/events-weddings.html" class="active">Events</a></li>
-                                <li><a href="../services/construction.html">Construction</a></li>
-                                <li><a href="../services/agriculture.html">Agriculture</a></li>
-                                <li><a href="../services/infrastructure.html">Infrastructure</a></li>
-                                <li><a href="../services/tourism.html">Tourism</a></li>
+                                <li><a href="../services/events-weddings.html" class="active">Weddings & Events</a></li>
+                                <li><a href="../services/commercial.html">Commercial</a></li>
                             </ul>
                         </li>
                         <li><a href="../portfolio.html">Portfolio</a></li>
@@ -58,13 +57,27 @@
     </header>
     <main>
         <!-- Page Banner -->
-        <section class="page-banner">
+        <section class="page-banner page-hero--slideshow" data-slideshow-images="../assets/images/weddings/wedding-venue.jpeg,../assets/images/weddings/valley.jpeg">
+            <div class="page-hero-slides" aria-hidden="true">
+                <div class="page-hero-slide is-active no-transition" style="background-image: url('../assets/images/weddings/wedding-venue.jpeg')"></div>
+                <div class="page-hero-slide" style="background-image: url('../assets/images/weddings/valley.jpeg')"></div>
+            </div>
             <div class="banner-overlay"></div>
             <div class="container">
                 <div class="banner-content">
-                    <h1>Events & Weddings</h1>
-                    <p>Capture memorable moments from breathtaking perspectives</p>
+                    <h1>Weddings & Events</h1>
+                    <p>Cinematic drone coverage for your biggest moments</p>
+                    <div class="button-group">
+                        <a href="../contact.html" class="cta-button">Get a Quote</a>
+                        <a href="../portfolio.html" class="cta-button-secondary">View Portfolio</a>
+                    </div>
                 </div>
+            </div>
+            <div id="page-hero-bottom" class="page-hero-bottom"></div>
+            <div class="scroll-down">
+                <a href="#page-hero-bottom" aria-label="Scroll to content">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
             </div>
         </section>
         
@@ -72,11 +85,11 @@
         <section class="services-overview section-padding">
             <div class="container">
                 <div class="section-header centered">
-                    <h2>Event Documentation Services</h2>
-                    <p>Innovative aerial perspectives that transform event documentation</p>
+                    <h2>Wedding & Event Coverage</h2>
+                    <p>Aerial photo and video that complements your main photographer</p>
                 </div>
                 <div class="overview-content">
-                    <p>PrestigeWW Aerial Media offers specialized drone photography and videography services for weddings, festivals, sports events, and other special gatherings. Our aerial event coverage provides unique perspectives that capture the scale, atmosphere, and excitement of your event in ways that traditional photography cannot. From intimate moments to grand celebrations, our services help create unforgettable memories of your special day.</p>
+                    <p>NuVue Media LLC captures weddings, celebrations, and live events from above. We work alongside your existing photo or video team to add cinematic establishing shots, venue reveals, and crowd perspectives that make your final gallery more memorable.</p>
                 </div>
             </div>
         </section>
@@ -85,8 +98,8 @@
         <section class="service-detail section-padding alt-bg" id="wedding-coverage">
             <div class="container">
                 <div class="section-header centered">
-                    <h2>Wedding Aerial Coverage</h2>
-                    <p>Cinematic aerial moments for your special day</p>
+                    <h2>What We Capture</h2>
+                    <p>Venue reveals, ceremony highlights, and celebration footage</p>
                 </div>
                 <div class="service-content">
                     <div class="service-info">
@@ -126,109 +139,7 @@
                         <a href="../contact.html" class="cta-button">Request Wedding Information</a>
                     </div>
                     <div class="service-image">
-                        <img src="assets/images/services/wedding-aerial.jpg" alt="Wedding Aerial Photography">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Festival & Event Coverage Section -->
-        <section class="service-detail section-padding" id="festival-coverage">
-            <div class="container">
-                <div class="section-header centered">
-                    <h2>Festival & Event Coverage</h2>
-                    <p>Capture the scale and energy of large gatherings</p>
-                </div>
-                <div class="service-content">
-                    <div class="service-info">
-                        <p>Our festival and event coverage services provide comprehensive aerial documentation that captures the scale, energy, and atmosphere of your event. Perfect for music festivals, community gatherings, corporate events, and public celebrations, our aerial footage provides compelling content for marketing, social media, and future event promotion.</p>
-                        
-                        <div class="feature-grid">
-                            <div class="feature-item">
-                                <i class="fas fa-map-marked-alt"></i>
-                                <h4>Event Scale</h4>
-                                <p>Showcase attendance and venue layout</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-video"></i>
-                                <h4>Dynamic Movements</h4>
-                                <p>Engaging flyovers and crowd perspectives</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-share-alt"></i>
-                                <h4>Promotional Content</h4>
-                                <p>Compelling footage for marketing and social media</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-clock"></i>
-                                <h4>Time-Lapse Sequences</h4>
-                                <p>Document event progression throughout the day</p>
-                            </div>
-                        </div>
-                        
-                        <div class="ideal-for">
-                            <span>Music Festivals</span>
-                            <span>Community Events</span>
-                            <span>Corporate Gatherings</span>
-                            <span>Charity Fundraisers</span>
-                            <span>Public Celebrations</span>
-                        </div>
-                        
-                        <a href="../contact.html" class="cta-button">Request Event Information</a>
-                    </div>
-                    <div class="service-image">
-                        <img src="assets/images/services/festival-aerial.jpg" alt="Festival Aerial Coverage">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sports & Recreation Section -->
-        <section class="service-detail section-padding alt-bg" id="sports-coverage">
-            <div class="container">
-                <div class="section-header centered">
-                    <h2>Sports & Recreation Coverage</h2>
-                    <p>Dynamic aerial documentation of athletic events</p>
-                </div>
-                <div class="service-content">
-                    <div class="service-info">
-                        <p>Our sports and recreation coverage provides dynamic aerial perspectives of athletic events, races, tournaments, and outdoor activities. We capture action sequences, course layouts, and participant movements from unique angles that enhance traditional event photography. These aerial highlights create compelling content for participants, sponsors, and event organizers.</p>
-                        
-                        <div class="feature-grid">
-                            <div class="feature-item">
-                                <i class="fas fa-running"></i>
-                                <h4>Action Tracking</h4>
-                                <p>Follow competitors along courses and routes</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-route"></i>
-                                <h4>Course Documentation</h4>
-                                <p>Showcase race routes and event layouts</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-trophy"></i>
-                                <h4>Key Moments</h4>
-                                <p>Capture starts, finishes, and award ceremonies</p>
-                            </div>
-                            <div class="feature-item">
-                                <i class="fas fa-edit"></i>
-                                <h4>Highlight Packages</h4>
-                                <p>Edited sequences for sponsors and participants</p>
-                            </div>
-                        </div>
-                        
-                        <div class="ideal-for">
-                            <span>Running Events</span>
-                            <span>Cycling Races</span>
-                            <span>Triathlons</span>
-                            <span>Golf Tournaments</span>
-                            <span>Adventure Races</span>
-                        </div>
-                        
-                        <a href="../contact.html" class="cta-button">Request Sports Coverage Information</a>
-                    </div>
-                    <div class="service-image">
-                        <img src="assets/images/services/sports-aerial.jpg" alt="Sports Aerial Coverage">
+                        <img src="../assets/images/weddings/wedding-venue.jpeg" alt="Aerial view of a wedding venue" loading="lazy" decoding="async">
                     </div>
                 </div>
             </div>
@@ -253,7 +164,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">
-                    <img src="assets/images/Maybe.png" alt="PrestigeWW Aerial Media Logo">
+                    <img src="../assets/images/nuvue-logos/nuvue-header-white-web.png" alt="NuVue Media LLC Logo" height="80" width="245" loading="lazy" decoding="async">
                     <p>Professional drone services in Richmond, VA</p>
                 </div>
                 <div class="footer-links">
@@ -270,11 +181,8 @@
                         <h3>Services</h3>
                         <ul>
                             <li><a href="../services/real-estate.html">Real Estate</a></li>
-                            <li><a href="../services/events-weddings.html">Events</a></li>
-                            <li><a href="../services/construction.html">Construction</a></li>
-                            <li><a href="../services/agriculture.html">Agriculture</a></li>
-                            <li><a href="../services/infrastructure.html">Infrastructure</a></li>
-                            <li><a href="../services/tourism.html">Tourism</a></li>
+                            <li><a href="../services/events-weddings.html">Weddings & Events</a></li>
+                            <li><a href="../services/commercial.html">Commercial</a></li>
                         </ul>
                     </div>
                 </div>
@@ -290,12 +198,13 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2023 PrestigeWW Aerial Media. All Rights Reserved.</p>
+                <p>&copy; 2023 NuVue Media LLC. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/headers.js"></script>
 </body>
 </html> 

@@ -1,46 +1,4 @@
-/* Page Banner Styles */
-.page-banner {
-    position: relative;
-    height: 300px;
-    width: 100%;
-    overflow: hidden;
-    color: white;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), url('../images/services/banner-bg.jpg') no-repeat center center;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-}
-
-.banner-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
-    z-index: 1;
-}
-
-.banner-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    text-align: center;
-    padding: 0 20px;
-}
-
-.banner-content h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
-    font-weight: 700;
-}
-
-.banner-content p {
-    font-size: 1.2rem;
-    max-width: 700px;
-    margin: 0 auto;
-    opacity: 0.9;
-}
+/* Page hero/banner styles live in style.css */
 
 /* Services Overview Section */
 .services-overview {
@@ -462,24 +420,6 @@
         font-size: 2rem;
     }
     
-    .banner-content h1 {
-        font-size: 2.4rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .page-banner {
-        height: 250px;
-    }
-    
-    .banner-content h1 {
-        font-size: 2rem;
-    }
-    
-    .banner-content p {
-        font-size: 1rem;
-    }
-    
     .section-header h2 {
         font-size: 1.8rem;
     }
@@ -490,14 +430,6 @@
 }
 
 @media (max-width: 576px) {
-    .page-banner {
-        height: 200px;
-    }
-    
-    .banner-content h1 {
-        font-size: 1.8rem;
-    }
-    
     .section-header h2 {
         font-size: 1.6rem;
     }
@@ -508,5 +440,113 @@
     
     .cta-content h2 {
         font-size: 1.8rem;
+    }
+}
+
+/* Service Page Footer Layout */
+footer .footer-content:has(.footer-column) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: left;
+}
+
+footer .footer-content:has(.footer-column) .footer-logo {
+    flex: 1 1 200px;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+footer .footer-content:has(.footer-column) .footer-logo img {
+    margin: 0;
+    height: 80px;
+    max-width: 480px;
+    opacity: 0.95;
+}
+
+footer .footer-content:has(.footer-column) .footer-links {
+    flex: 2 1 300px;
+    justify-content: flex-start;
+    text-align: left;
+    max-width: none;
+}
+
+footer .footer-content:has(.footer-column) .footer-column {
+    flex: 1;
+    min-width: 140px;
+}
+
+footer .footer-content:has(.footer-column) .footer-contact {
+    flex: 1 1 200px;
+    text-align: left;
+}
+
+footer .footer-content:has(.footer-column) .footer-contact h3 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+footer .footer-content:has(.footer-column) .footer-contact p {
+    margin-bottom: 8px;
+    opacity: 0.8;
+}
+
+footer .footer-content:has(.footer-column) .footer-contact p i {
+    margin-right: 8px;
+    color: var(--primary-color);
+}
+
+footer .footer-content:has(.footer-column) .social-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 12px;
+}
+
+footer .footer-content:has(.footer-column) .social-links a {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #222;
+    color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: background 0.3s, color 0.3s;
+}
+
+footer .footer-content:has(.footer-column) .social-links a:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    footer .footer-content:has(.footer-column) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .footer-content:has(.footer-column) .footer-logo,
+    footer .footer-content:has(.footer-column) .footer-links,
+    footer .footer-content:has(.footer-column) .footer-contact {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    footer .footer-content:has(.footer-column) .footer-logo img {
+        margin: 0 auto;
+    }
+
+    footer .footer-content:has(.footer-column) .footer-links {
+        justify-content: center;
+    }
+
+    footer .footer-content:has(.footer-column) .social-links {
+        justify-content: center;
     }
 }
